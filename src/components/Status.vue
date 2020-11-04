@@ -1,6 +1,6 @@
 <template >
-  <div>
-    <div class="stepLabel">
+  <div >
+      <div class="stepLabel">
       {{ stepLabel }}
       {{ currentStep.label }}
     </div>
@@ -8,9 +8,9 @@
     <div class="statusButton" v-on:click="nextStep">
       {{ changeStatusLabel }}
     </div>
+    
   </div>
 </template>
-
 
 <script>
 export default {
@@ -44,7 +44,8 @@ export default {
 
 <style scoped>
 .statusButton {
-  width: fit-content;
+height: 15px;
+    width: 90%;
   padding: 10px 18px;
   border-radius: 26px;
   cursor: pointer;
@@ -53,7 +54,7 @@ export default {
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
-  float: right;
+  margin-top: 40px;
 }
 
 .stepLabel {
@@ -61,5 +62,10 @@ export default {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #65ab0b;
+  margin: 15px 0;
 }
+
+/* .content {
+    display: flex;
+} */
 </style>
